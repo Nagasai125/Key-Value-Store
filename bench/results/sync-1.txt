@@ -1,0 +1,1 @@
+keys=100000 operations=1000000 key_bytes=16 value_bytes=128 threads=1 seed=42 durability=sync memtable_bytes=4194304 max_tables=4

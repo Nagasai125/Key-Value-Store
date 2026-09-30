@@ -1,0 +1,28 @@
+$ date -u +%Y-%m-%dT%H:%M:%SZ
+2026-09-30T21:23:58Z
+
+$ sw_vers
+ProductName:		macOS
+ProductVersion:		27.0
+BuildVersion:		26A428
+
+$ uname -smr
+Darwin 27.0.0 arm64
+
+$ sysctl -n machdep.cpu.brand_string
+Apple M3 Pro
+
+$ sysctl hw.memsize hw.physicalcpu hw.logicalcpu
+hw.memsize: 19327352832
+hw.physicalcpu: 11
+hw.logicalcpu: 11
+
+$ c++ --version
+Apple clang version 21.0.0 (clang-2100.3.34.2)
+Target: arm64-apple-darwin27.0.0
+Thread model: posix
+InstalledDir: /Library/Developer/CommandLineTools/usr/bin
+
+Build: make -j4 all
+Flags: -O3 -DNDEBUG -std=c++17 -Wall -Wextra -Wpedantic -pthread
+Three fresh-database runs per mode, sequential on the same host.
